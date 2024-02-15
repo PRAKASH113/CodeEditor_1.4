@@ -1,25 +1,17 @@
-window.hideChild = function (childElement) {
-    childElement.style.height = "0";
-    childElement.style.marginBottom = "0";
-    var textElement = childElement.getElementsByClassName("text")[0];
-    textElement.style.fontSize = "0";
+document.addEventListener("DOMContentLoaded", function() {
+    const searchInput = document.getElementById("searchInput");
+    const listItems = document.querySelectorAll(".child");
 
-};
+    searchInput.addEventListener("input", function() {
+        const searchText = searchInput.value.toLowerCase();
 
-window.filterList = function () {
-    var input = document.getElementById("searchInput").value.toUpperCase();
-    var list = document.getElementsByClassName("child");
-
-    for (var i = 0; i < list.length; i++) {
-        var textElement = list[i].getElementsByClassName("text")[0];
-        var text = textElement.textContent || textElement.innerText;
-
-        if (text.toUpperCase().indexOf(input) > -1) {
-            list[i].style.display = "";
-        } else {
-            hideChild(list[i]);
-        }
-    }
-};
-
-
+        listItems.forEach(function(item) {
+            const text = item.querySelector(".text").textContent.toLowerCase();
+            if (text.includes(searchText)) {
+                item.style.display = "flex";
+            } else {
+                item.style.display = "none";
+            }
+        });
+    });
+});

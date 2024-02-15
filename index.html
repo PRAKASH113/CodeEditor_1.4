@@ -6,9 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="stylesheet" href="./style.css"/>
   <link rel="stylesheet" href="./createmenu.css"/>
+  <script src="visiblity.js"></script>
   <script src="slide.js"></script>
+  <script src="choise.js"></script>
+  <script src="proj.js"></script>
   <script src="search.js"></script>
   <script src="script.js"></script>
+
   <title>homescreen</title>
 </head>
 <body>
@@ -39,25 +43,24 @@
           </div>
         </div>
         <div class="list" id="programmingList">
-          <div class="child JavaScript">    <div class="image"><img src="assets2/image1.jpg" alt="Image 1"></div><div class="text">JavaScript</div></div>
-          <div class="child Python">   <div class="image"><img src="assets2/image2.jpg" alt="Image 2"></div><div class="text">Python</div></div>
-          <div class="child Java" >   <div class="image"><img src="assets2/image3.jpg" alt="Image 3"></div><div class="text">Java</div></div>
-          <div class="child C++" >   <div class="image"></div><div class="text">C++</div></div>
-          <div class="child HTML/CSS" >   <div class="image"></div><div class="text">HTML/CSS</div></div>
-          <div class="child Ruby" >   <div class="image"></div><div class="text">Ruby</div></div>
-          <div class="child Swift" >   <div class="image"></div><div class="text">Swift</div></div>
-          <div class="child Go" >   <div class="image"></div><div class="text">Go</div></div>
-          <div class="child TypeScript" >   <div class="image"></div><div class="text">TypeScript</div></div>
-          <div class="child PHP" >   <div class="image"></div><div class="text">PHP</div></div>
-          <div class="child C#" >   <div class="image"></div><div class="text">C#</div></div>
-          <div class="child Kotlin" >   <div class="image"></div><div class="text">Kotlin</div></div>
-          <div class="child Rust" >   <div class="image"></div><div class="text">Rust</div></div>
-          <div class="child Scala" >   <div class="image"></div><div class="text">Scala</div></div>
-          <div class="child Objective-C" >   <div class="image"></div><div class="text">Objective-C</div></div>
-          <div class="child Perl">   <div class="image"></div><div class="text">Perl</div></div>
-          <div class="child Shell">   <div class="image"></div><div class="text">Shell</div></div>
-          <div class="child SQL">   <div class="image"></div><div class="text">SQL</div></div>
-          <div class="child TypeScript">   <div class="image"></div><div class="text">TypeScript</div></div>
+          <div class="child JavaScript">    <div class="image"><img src="Icons/JavaScript_Icon.jpg" alt="Image 1"></div><div class="text">JavaScript</div></div>
+          <div class="child Python">   <div class="image"><img src="Icons/Python_Icon.jpg" alt="Image 2"></div><div class="text">Python</div></div>
+          <div class="child Java" >   <div class="image"><img src="Icons/Java_Icon.jpg" alt="Image 3"></div><div class="text">Java</div></div>
+          <div class="child Cplusplus" >   <div class="image"><img src="Icons/C++_Icon.jpg" alt="Image 4"></div><div class="text">Cplusplus</div></div>
+          <div class="child HTML/CSS" >   <div class="image"><img src="Icons/HTML_CSS_Icon.jpg" alt="Image 5"></div><div class="text">HTML/CSS</div></div>
+          <div class="child Ruby" >   <div class="image"><img src="Icons/Ruby_Icon.jpg" alt="Image 6"></div><div class="text">Ruby</div></div>
+          <div class="child Swift" >   <div class="image"><img src="Icons/Swift_Icon.jpg" alt="Image 7"></div><div class="text">Swift</div></div>
+          <div class="child Go" >   <div class="image"><img src="Icons/Go_Icon.jpg" alt="Image 8"></div><div class="text">Go</div></div>
+          <div class="child TypeScript" >   <div class="image"><img src="Icons/TypeScript_Icon.jpg" alt="Image 9"></div><div class="text">TypeScript</div></div>
+          <div class="child PHP" >   <div class="image"><img src="Icons/PHP_Icon.jpg" alt="Image 10"></div><div class="text">PHP</div></div>
+          <div class="child C#" >   <div class="image"><img src="Icons/Csharp_Icon.jpg" alt="Image 11"></div><div class="text">C#</div></div>
+          <div class="child Kotlin" >   <div class="image"><img src="Icons/Kotlin_Icon.jpg" alt="Image 12"></div><div class="text">Kotlin</div></div>
+          <div class="child Rust" >   <div class="image"><img src="Icons/Rust_Icon.jpg" alt="Image 13"></div><div class="text">Rust</div></div>
+          <div class="child Scala" >   <div class="image"><img src="Icons/Scala_Icon.jpg" alt="Image 14"></div><div class="text">Scala</div></div>
+          <div class="child Objective-C" >   <div class="image"><img src="Icons/Objective-C_Icon.jpg" alt="Image 15"></div><div class="text">Objective-C</div></div>
+          <div class="child Perl">   <div class="image"><img src="Icons/Perl_Icon.jpg" alt="Image 16"></div><div class="text">Perl</div></div>
+          <div class="child Shell">   <div class="image"><img src="Icons/Shell_Icon.jpg" alt="Image 17"></div><div class="text">Shell</div></div>
+          <div class="child SQL">   <div class="image"><img src="Icons/SQL_Icon.jpg" alt="Image 18"></div><div class="text">SQL</div></div>
         </div>
       </div>
       <div class="general">
@@ -68,33 +71,48 @@
           </div>
         </div>
         <div class="setting">
+          <div class="slection">Selected Templates</div>
           <div class="selectedtemplates">
-            <div class="choise 1"><div class="language-name">Language Name </div>
-              <svg class="cross" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 -0.704142 0.710059 0.704142 1.05884 7.07108)" stroke="black"/>
-              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 0.704142 -0.710059 0.704142 0.050415 0.0710754)" stroke="black"/>
-              </svg>
-            </div>
-            <div class="choise 2"><div class="language-name">Language Name </div>
-              <svg class="cross" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 -0.704142 0.710059 0.704142 1.05884 7.07108)" stroke="black"/>
-              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 0.704142 -0.710059 0.704142 0.050415 0.0710754)" stroke="black"/>
-              </svg>
-            </div>
-            <div class="choise 3"><div class="language-name">Language Name </div>
-              <svg class="cross" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 -0.704142 0.710059 0.704142 1.05884 7.07108)" stroke="black"/>
-              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 0.704142 -0.710059 0.704142 0.050415 0.0710754)" stroke="black"/>
-              </svg>
-            </div>
+            <div class="space"></div>
+            <div class="choise1 choise-container"></div>
+            <div class="choise2 choise-container"></div>
+            <div class="choise3 choise-container"></div>            
             <div class="blank"></div>
           </div>
-          <div class="visiblity">
+          <div class="visiblitytoggle">
+            <div class="Private" onclick="changeColor(this)">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/b38ded546d0d55f6fe72d2f7f717c8e4f56f75c7d381404db12e3400097a3c40?"
+                class="my-auto aspect-square w-[18px]"
+              />
+              <div class="Pricon">Private</div>
+            </div>
+            <div class="Public" onclick="changeColor(this)">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/5b8191f55d43cf915e4485b41410b553377788d2ce24e2f32a257a21ee7c9cd7?"
+                class="my-auto aspect-square w-[18px]"
+              />
+              <div class="Pubcon">Public</div>
+            </div>
+            <div class="Custom" onclick="changeColor(this)">
+              <img
+                loading="lazy"
+                src="https://cdn.builder.io/api/v1/image/assets/TEMP/2143ab566028a2cfe18e3bf808320e36bd528a7007667f3d016434ab0fac1d1f?"
+                class="my-auto aspect-square w-[18px]"
+              />
+              <div class="Cuscon">Custom</div>
+            </div>
           </div>
+          <div class="extras"></div>
           <div class="aditionalsettings">
+            <button>Additional Settings</button>
           </div>
         </div>
         <div class="action">
+          <div class="createbutton">Create</div>
+          <div class="import">Import</div>
         </div>
       </div>
     </div>

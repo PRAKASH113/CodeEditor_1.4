@@ -138,7 +138,7 @@
 .createproject{
   background: #212121;
   color: #14FFEC;
-  height: 40px;
+  height: 40%;
   text-align: left;
   margin-top: 12px;
   margin-left: 15px;
@@ -173,39 +173,182 @@
   white-space: nowrap;
 }
 .setting{
-  background: #00aaff;
+  background: #212121;
   flex: 1;
   display: flex;
   flex-direction: column;
 }
-.selectedtemplates{
-  background: #bcbcbc;
-  height: 10%;
+.slection {
+  background: #212121; /* Corrected missing semicolon */
+  height: 8%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-top: 1%;
+  margin-left: 4%;
+  color: white;
+  font-size: 15px;
+  font-family: IBM Plex Sans Devanagari, Arial, sans-serif;
+  font-weight: 300;
+  word-wrap: break-word
+}
+.selectedtemplates {
+  background: #212121;
+  height: 7%; /* Adjust the height as needed */
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
 }
-.choise{
-  background: #87c5ff;
-  border-radius: 3px;
-  width: 113px;
-  height: 18px;
-  position: absolute;
-  left: 582px;
-}
-.blank{
+.space{
+  background: #212121;
   height: 100%;
+  width: 4%;
+}
+.choise-container {
+  background-color: #212121;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+
+}
+.choise1 img,
+.choise2 img,
+.choise3 img {
+  max-width: 100%; /* Limit the image width to its container */
+  max-height: 100%; /* Limit the image height to its container */
+  height: auto; /* Maintain the aspect ratio */
+}
+.blank {
+  height: 100%;
+  flex: 1; /* This will make the blank child take up the remaining space */
+}
+
+
+
+
+
+.visiblitytoggle {
+  background: #212121;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+}
+.visiblitytoggle .Private,
+.visiblitytoggle .Public,
+.visiblitytoggle .Custom {
+  border-radius: 5px; /* Adjust the value as needed */
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  border: 1.8px #0D7377 solid;
+}
+
+.Private {
+  flex: 1;
+  margin-left: 4%;
+  margin-right: 2%;
+}
+.Private img {
+  margin-right: 4%;
+}
+.Public {
+  margin-left: 1%;
+  margin-right: 1%;
   flex: 1;
 }
-.visiblity {
-  background: #9bac50;
+.Public img {
+  margin-right: 4%;
+}
+.Custom {
+  margin-left: 2%;
+  margin-right: 4%;
   flex: 1;
-  padding: 5px;
+}
+.Custom img {
+  margin-right: 4%;
+}
+.Pricon,
+.Pubcon,
+.Cuscon {
+  font-family: Arial, sans-serif; /* Change this to your desired font */
+  color: #ffffff;
+  font-size: 12px; /* Adjust the value as needed */
+}
+.visiblitytoggle .Private:hover,
+.visiblitytoggle .Public:hover,
+.visiblitytoggle .Custom:hover {
+  background: #343434;
+  border-color: #06DDCC;
+}
+.visiblitytoggle .changed-color:hover {
+  background: none !important;
+  cursor: default;
+}
+
+
+
+
+
+
+
+
+.extras{
+  background:#212121;
+  flex: 1;
 }
 .aditionalsettings{
-  background: #fc7a00;
+  background: #212121;
   height: 10%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.aditionalsettings button {
+  background: none;
+  font-family: Arial, sans-serif; /* Change this to your desired font */
+  color: #ffffff;
+  font-size: 14px; /* Adjust the value as needed */
+  margin-right: 2%;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.aditionalsettings button:hover {
+  text-decoration: underline;
 }
 .action{
-  background: #00ff51;
+  background: #212121;
   height: 45px;
+  display: flex;
+  padding: 2%;
+  flex-direction: row;
+}
+.createbutton,
+.import{
+  background: #0D7377;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  border-radius: 7px; /* Add rounded corners */
+  transition: background-color 0.3s, color 0.3s;
+}
+.createbutton{
+  margin-right: 1%;
+  flex: 2;
+  font: 400 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif; /* Apply font properties */
+}
+.import{
+  margin-left: 1%;
+  flex: auto;
+  font: 400 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif; /* Apply font properties */
+
+}
+.createbutton:hover,
+.import:hover {
+  background: #06DDCC!important;
+  color: #0D7377!important;
 }

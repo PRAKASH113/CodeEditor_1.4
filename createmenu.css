@@ -1,0 +1,211 @@
+.modal-container {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(6px);
+  background: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+.menu {
+  background: #323232;
+  width: 717px;
+  height: 460px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  overflow: hidden;
+}
+.template{
+  background: #323232;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+.search{
+  background: #323232;
+  height: 19.5%;
+  display: flex;
+  flex-direction: column;
+}
+.head{
+  background: #323232;
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15px;
+  color: white;
+  font-size: 20px;
+  font-family: IBM Plex Sans Devanagari, Arial, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word
+}
+.searchbox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #323232;
+  width: 100%;
+  flex: 1;
+}
+.searchbox input{
+  background: #212121;
+  color: #bcbcbc;
+  width: 90%;
+  height: 100%;
+  font-family: "IBM Plex Sans Devanagari", Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+  resize: none;
+  max-width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding: 8px;
+  vertical-align: middle;
+  max-height: 30px;
+  line-height: 10px;
+  overflow-x: hidden;
+  white-space: nowrap;
+  box-shadow: none; 
+}
+.list {
+  margin-top: 5%;
+  flex: 1;
+  background-color: #323232;
+  overflow-y: scroll;
+}
+.list::-webkit-scrollbar {
+  width: 0em;
+}
+.child {
+  background:#323232;
+  height: 30px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+}
+.child .image {
+  background: #323232;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.child .image img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+.child .text {
+  flex: 1;
+  height: 100%;
+  color: #988585;
+  font-size: 15px;
+  font-family: 'IBM Plex Sans Devanagari', sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.child :hover {
+  background: #646060;
+}
+.child:hover .image{
+  background: #646060;
+}
+.child:hover .text{
+  background: #646060;
+  color: #fff;
+}
+.general{
+  background: #212121;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.new{
+ background: #212121; 
+ height: 90px;
+ display: flex;
+ flex-direction: column;
+}
+.createproject{
+  background: #212121;
+  color: #14FFEC;
+  height: 40px;
+  text-align: left;
+  margin-top: 12px;
+  margin-left: 15px;
+  font-family: "IBM Plex Sans Devanagari", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+}
+.name {
+  background: #212121;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.name textarea {
+  background: #323232;
+  color: #bcbcbc;
+  width: 93%;
+  height: 100%;
+  font-family: "IBM Plex Sans Devanagari", Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+  resize: none;
+  max-width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  padding: 8px;
+  vertical-align: middle;
+  max-height: 30px;
+  line-height: 10px;
+  overflow-x: hidden;
+  white-space: nowrap;
+}
+.setting{
+  background: #00aaff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.selectedtemplates{
+  background: #bcbcbc;
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+}
+.choise{
+  background: #87c5ff;
+  border-radius: 3px;
+  width: 113px;
+  height: 18px;
+  position: absolute;
+  left: 582px;
+}
+.blank{
+  height: 100%;
+  flex: 1;
+}
+.visiblity {
+  background: #9bac50;
+  flex: 1;
+  padding: 5px;
+}
+.aditionalsettings{
+  background: #fc7a00;
+  height: 10%;
+}
+.action{
+  background: #00ff51;
+  height: 45px;
+}

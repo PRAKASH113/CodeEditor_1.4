@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./style.css"/>
+  <link rel="stylesheet" href="./createmenu.css"/>
+  <script src="slide.js"></script>
+  <script src="search.js"></script>
+  <script src="script.js"></script>
+  <title>homescreen</title>
+</head>
+<body>
+  <div class="main-menu">
+    <div class="Create-Button">New Project</div>
+  </div>
+  <div class="showcase">
+    <div class="Slides-Showcase">
+      <div class="slides">
+        <img class="slide-image" src="asets/image1.jpg" alt="Slide 1" />
+        <img class="slide-image" src="asets/image2.jpg" alt="Slide 2" />
+        <img class="slide-image" src="asets/image3.png" alt="Slide 3" />
+        <img class="slide-image" src="asets/image4.jpeg" alt="Slide 4" />
+        <img class="slide-image" src="asets/image5.jpg" alt="Slide 5" />
+      </div>
+    </div>
+    <div class="Projects-Showcase">
+      <div class="projects"></div>
+    </div>
+  </div>
+  <div class="modal-container" id="modalContainer">
+    <div class="menu">
+      <div class="template">
+        <div class="search">
+          <div class="head">Templates</div>
+          <div class="searchbox">
+            <input type="text" id="searchInput" placeholder="Search">
+          </div>
+        </div>
+        <div class="list" id="programmingList">
+          <div class="child JavaScript">    <div class="image"><img src="assets2/image1.jpg" alt="Image 1"></div><div class="text">JavaScript</div></div>
+          <div class="child Python">   <div class="image"><img src="assets2/image2.jpg" alt="Image 2"></div><div class="text">Python</div></div>
+          <div class="child Java" >   <div class="image"><img src="assets2/image3.jpg" alt="Image 3"></div><div class="text">Java</div></div>
+          <div class="child C++" >   <div class="image"></div><div class="text">C++</div></div>
+          <div class="child HTML/CSS" >   <div class="image"></div><div class="text">HTML/CSS</div></div>
+          <div class="child Ruby" >   <div class="image"></div><div class="text">Ruby</div></div>
+          <div class="child Swift" >   <div class="image"></div><div class="text">Swift</div></div>
+          <div class="child Go" >   <div class="image"></div><div class="text">Go</div></div>
+          <div class="child TypeScript" >   <div class="image"></div><div class="text">TypeScript</div></div>
+          <div class="child PHP" >   <div class="image"></div><div class="text">PHP</div></div>
+          <div class="child C#" >   <div class="image"></div><div class="text">C#</div></div>
+          <div class="child Kotlin" >   <div class="image"></div><div class="text">Kotlin</div></div>
+          <div class="child Rust" >   <div class="image"></div><div class="text">Rust</div></div>
+          <div class="child Scala" >   <div class="image"></div><div class="text">Scala</div></div>
+          <div class="child Objective-C" >   <div class="image"></div><div class="text">Objective-C</div></div>
+          <div class="child Perl">   <div class="image"></div><div class="text">Perl</div></div>
+          <div class="child Shell">   <div class="image"></div><div class="text">Shell</div></div>
+          <div class="child SQL">   <div class="image"></div><div class="text">SQL</div></div>
+          <div class="child TypeScript">   <div class="image"></div><div class="text">TypeScript</div></div>
+        </div>
+      </div>
+      <div class="general">
+        <div class="new">
+          <div class="createproject">Create Project</div>
+          <div class="name">
+            <textarea id="projectName" placeholder="Untitled" rows="1" maxlength="128"></textarea>
+          </div>
+        </div>
+        <div class="setting">
+          <div class="selectedtemplates">
+            <div class="choise 1"><div class="language-name">Language Name </div>
+              <svg class="cross" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 -0.704142 0.710059 0.704142 1.05884 7.07108)" stroke="black"/>
+              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 0.704142 -0.710059 0.704142 0.050415 0.0710754)" stroke="black"/>
+              </svg>
+            </div>
+            <div class="choise 2"><div class="language-name">Language Name </div>
+              <svg class="cross" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 -0.704142 0.710059 0.704142 1.05884 7.07108)" stroke="black"/>
+              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 0.704142 -0.710059 0.704142 0.050415 0.0710754)" stroke="black"/>
+              </svg>
+            </div>
+            <div class="choise 3"><div class="language-name">Language Name </div>
+              <svg class="cross" width="9" height="8" viewBox="0 0 9 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 -0.704142 0.710059 0.704142 1.05884 7.07108)" stroke="black"/>
+              <line y1="-0.5" x2="10.0421" y2="-0.5" transform="matrix(0.710059 0.704142 -0.710059 0.704142 0.050415 0.0710754)" stroke="black"/>
+              </svg>
+            </div>
+            <div class="blank"></div>
+          </div>
+          <div class="visiblity">
+          </div>
+          <div class="aditionalsettings">
+          </div>
+        </div>
+        <div class="action">
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

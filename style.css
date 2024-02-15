@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  min-width: 400px;
+  min-height: 400px;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+.main-menu {
+  background: #323232;
+  flex: 0 0 auto;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Create-Button {
+  background: #0d7377;
+  color: #fff;
+  width: 250px;
+  height: 50px;
+  border-radius: 4px;
+  margin-top: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "IBM Plex Sans Hebrew", Arial, sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+  /* Add transition for a smooth hover effect */
+  transition: background-color 0.3s ease;
+}
+/* Add hover effect */
+.Create-Button:hover {
+  background-color: #095d63;
+  /* Change the background color on hover */
+  cursor: pointer;
+  /* Change cursor on hover */
+}
+.showcase {
+  background: #ff0505;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+.Slides-Showcase{
+  background: #212121;
+  flex: 0 0 auto;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.slides {
+  background: #212121;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  border-radius: 4px;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+}
+.slide-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1; /* Set initial opacity to 1 for the first image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 2s ease-in-out; /* Apply transition only for subsequent images */
+}
+.slide-image.active {
+  opacity: 1;
+}
+.Projects-Showcase {
+  background: #212121;
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+

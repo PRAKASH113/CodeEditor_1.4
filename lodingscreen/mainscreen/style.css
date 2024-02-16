@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+    min-width: 0px;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden; /* Add this line to prevent the body from scrolling */
+}
+.navbar_container {
+    background-color: #0D7377;
+    padding: 4px 1px;
+    flex: 0 0 auto;
+    height: 20px;
+}
+.navbar_container button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 20px; /* Adjust the margin to bring buttons closer together */
+    transition: 0.3s;
+}
+.navbar_container button:hover {
+    text-decoration: underline;
+}
+.directory-box-code-writing-space_container {
+    background-color: #2ecc71;
+    flex: 1;
+    display: flex; 
+    overflow: hidden;
+    min-height: 100px;
+}
+.directory-box {
+    flex: 0 0 auto;
+    width: 200px;
+    background-color: #323232;
+}
+.code-writing-space {
+    flex: 1;
+    background-color: #212121;
+    display: flex;
+    flex-direction: column;
+}
+.code-writing-area-setting {
+    background: #212121;
+    flex: 0 0 auto;
+    height: 25px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+}
+.vector-1 {
+    transform: translate(0, -100%);
+    overflow: visible;
+    margin-left: -20px;
+    margin-top: 25px;
+    position: relative; /* Add this line */
+}
+.close {
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 14px;
+    left: 0px;
+    transform: translate(-50%, -50%);
+}
+.close::before,
+.close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.close::before {
+    transform: rotate(45deg);
+}
+.close::after {
+    transform: rotate(-45deg);
+}
+.file-name {
+    color: #ffffff;
+    text-align: left;
+    font: 400 20px "IBM Plex Sans Hebrew", sans-serif;
+    position: relative;
+    width: 91px;
+    height: 24px;
+    top: 4px;
+    left: -110px;
+    transform-origin: 0 0;
+    transform: rotate(0deg) scale(1, 1);
+  
+} 
+.code-writing-area-setting button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    margin-left: 20px; /* Adjust the margin to bring buttons closer together */
+    transition: 0.3s;
+}
+.code-writing-area {
+    background: #212121;
+    border-style: solid;
+    border-color: #0d7377;
+    border-width: 2px 0px 0px 0px;
+    flex: 0 0 auto;
+    flex: 1;
+    min-height: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.terminal-menu {
+    background: #212121;
+    flex: 0 0 auto;
+    height: 23px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: end;
+}
+.vector-2 {
+    width: 145px;
+    height: 26px; 
+    fill: #0D7377; 
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.terminal-menu-close {
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 0px;
+    transform: translate(-50%, -50%);
+}
+.terminal-menu-close::before,
+.terminal-menu-close::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.terminal-menu-close::before {
+    transform: rotate(45deg);
+}
+.terminal-menu-close::after {
+    transform: rotate(-45deg);
+}
+.new-terminal {
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 37px;
+    transform: translate(-50%, -50%);
+}
+.new-terminal::before,
+.new-terminal::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.new-terminal::before {
+    transform: rotate(0deg);
+}
+.new-terminal::after {
+    transform: rotate(-90deg);
+}
+.minimize {
+    width: 18px;
+    height: 18px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 12px;
+    right: 80px;
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease;
+}
+.minimize::before,
+.minimize::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 80%;
+    background-color: white;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.minimize::before {
+    left: 9px; 
+    transform: rotate(-45deg);
+}
+.minimize::after {
+    right: 9px; 
+    transform: rotate(45deg);
+}
+.minimize.rotate-clockwise::before {
+    transform: rotate(45deg);
+}
+.minimize.rotate-clockwise::after {
+    transform: rotate(-45deg);
+}
+.minimize.rotate-counter-clockwise::before {
+    transform: rotate(-45deg);
+}
+.minimize.rotate-counter-clockwise::after {
+    transform: rotate(45deg);
+}
+.output-window {
+    background: #242424;
+    border-style: solid;
+    border-color: #0d7377;
+    border-width: 2px 0px 0px 0px;
+    flex: 0 0 auto;
+    overflow: hidden;
+    position: relative;
+    max-height: 600px; /* Set the maximum height */
+    min-height: 2px; /* Set the minimum height */
+    transition: height 0.3s ease, background-color 0.6s ease;
+}
+.resize-handle {
+    width: 100%;
+    height: 1px; /* Height of the resizing handle */
+    background: #0d7377;
+    cursor: ns-resize; /* Set cursor style to north-south resize */
+    flex: 1; 
+}
+.ggcontainer {
+    flex: 1 !important;
+    display: flex !important;
+    box-sizing: border-box !important;
+}
+#editor-container {
+    flex: 1 !important;
+    display: flex !important;
+    box-sizing: border-box !important;
+}

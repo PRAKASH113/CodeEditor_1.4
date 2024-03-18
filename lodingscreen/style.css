@@ -1,38 +1,37 @@
 body {
-    background-color: #212121; /* Set background color */
+    background-color: #212121;
     margin: 0;
 }
 
 .container {
-    display: flex; /* Use flexbox for layout */
-    flex-direction: column; /* Stack elements vertically */
-    align-items: center; /* Center items horizontally */
-    justify-content: center; /* Center items vertically */
-    position: absolute; /* Position the container */
-    top: 50%; /* Move container to the vertical center */
-    left: 50%; /* Move container to the horizontal center */
-    transform: translate(-50%, -50%); /* Center the container precisely */
-    width: 100%; /* Spread container to the maximum width */
-    max-width: 80%; /* Limit container width to 80% of the viewport width */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 80%;
 }
 
-
 h1, #quote-text {
-    font-family: 'IBM Plex Sans Devanagari', sans-serif; /* Set font */
-    font-weight: 600; /* Set font weight */
-    text-align: center; /* Center align text */
-    max-width: 80%; /* Limit text width */
+    font-family: 'IBM Plex Sans Devanagari', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    max-width: 80%;
 }
 
 h1 {
-    color: #14FFEC; /* Set text color */
-    font-size: 40px; /* Set the font size for the heading */
-    margin-bottom: 20px; /* Add margin to the bottom of the heading */
+    color: #14FFEC;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 #quote-text {
-    color: #ffffff; /* Set text color */
-    font-size: 14px; /* Set the font size */
+    color: #ffffff;
+    font-size: 14px;
 }
 
 .progress-container {
@@ -40,7 +39,7 @@ h1 {
     height: 17px;
     background: #343434;
     border-radius: 42px;
-    overflow: hidden; /* Ensure the progress bar does not overflow */
+    overflow: hidden;
 }
 
 .progress-bar {

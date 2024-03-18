@@ -35,12 +35,11 @@ document.addEventListener("DOMContentLoaded", function() {
             selectedLanguages[index] = language;
 
             const imageElement = document.createElement("img");
-            imageElement.src = `assets3/${language}.jpg`;
+            imageElement.src = `assets/assets3/${language}.jpg`;
             imageElement.alt = language;
             choiseContainers[index].innerHTML = "";
             choiseContainers[index].appendChild(imageElement);
 
-            // Adjust image and container size to fit within the choise rectangle
             imageElement.addEventListener("load", function() {
                 const containerWidth = choiseContainers[index].clientWidth;
                 const containerHeight = choiseContainers[index].clientHeight;
@@ -48,19 +47,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 const imgHeight = imageElement.naturalHeight;
                 const imgAspectRatio = imgWidth / imgHeight;
 
-                // Calculate adjusted width and height for the image
                 let newImgWidth, newImgHeight;
                 if (imgAspectRatio > containerWidth / containerHeight) {
-                    // Image is wider, so adjust width to match container width
                     newImgWidth = containerWidth;
                     newImgHeight = newImgWidth / imgAspectRatio;
                 } else {
-                    // Image is taller, so adjust height to match container height
                     newImgHeight = containerHeight;
                     newImgWidth = newImgHeight * imgAspectRatio;
                 }
 
-                // Set the adjusted width and height for the image and container
                 imageElement.style.width = `${newImgWidth}px`;
                 imageElement.style.height = `${newImgHeight}px`;
                 choiseContainers[index].style.width = `${newImgWidth}px`;
@@ -82,13 +77,12 @@ document.addEventListener("DOMContentLoaded", function() {
             getBackChild(document.querySelector(`.child.${language}`));
             container.innerHTML = "";
 
-            // Reset the width of the container
-            container.style.width = ''; // or set it to your default width value
+            container.style.width = '';
 
             for (let i = 0; i < selectedLanguages.length; i++) {
                 const currentContainer = choiseContainers[i];
                 if (selectedLanguages[i]) {
-                    currentContainer.innerHTML = `<img src="assets3/${selectedLanguages[i]}.jpg" alt="${selectedLanguages[i]}">`;
+                    currentContainer.innerHTML = `<img src="assets/assets3/${selectedLanguages[i]}.jpg" alt="${selectedLanguages[i]}">`;
                 } else {
                     currentContainer.innerHTML = "";
                 }

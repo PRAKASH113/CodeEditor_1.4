@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (createButton) {
         createButton.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent click on the button from triggering document click
+            event.stopPropagation();
             toggleModal();
         });
     }
@@ -14,10 +14,10 @@ document.addEventListener('DOMContentLoaded', function() {
             toggleModal();
         });
 
-        const menu = modalContainer.querySelector('.menu'); // Updated class name
+        const menu = modalContainer.querySelector('.menu');
         if (menu) {
             menu.addEventListener('click', function(event) {
-                event.stopPropagation(); // Prevent click inside menu from closing the modal
+                event.stopPropagation();
             });
         }
     }

@@ -1,4 +1,3 @@
-// Array of quotes
 const quotes = [
     "Debugging: Removing the needles from the haystack.",
     "Why did the programmer quit his job? Because he didn't get arrays.",
@@ -7,7 +6,6 @@ const quotes = [
     "Ankit tu chutiya hai - Segmentation fault (core dumped)."
 ];
 
-// Shuffle function to randomly reorder array elements
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -15,12 +13,10 @@ function shuffle(array) {
     }
 }
 
-// Rotate quotes every 3 seconds
 function rotateQuotes() {
     const quoteElement = document.getElementById('quote-text');
     let index = 0;
     
-    // Shuffle the array of quotes initially
     shuffle(quotes);
     quoteElement.textContent = quotes[index];
 
@@ -30,19 +26,16 @@ function rotateQuotes() {
     }, 3000);
 }
 
-// Animate progress bar and redirect to new page when filled
 function animateProgressBar() {
     const progressBar = document.getElementById('progress-bar');
     const containerWidth = document.querySelector('.progress-container').offsetWidth;
-    progressBar.style.width = containerWidth + 'px'; // Fill progress bar to container width
+    progressBar.style.width = containerWidth + 'px';
 
-    // Redirect to new page when progress bar is filled
     setTimeout(() => {
         window.location.href = 'mainscreen/index.html';
-    }, 8000); // Redirect after 8 seconds (same as progress bar animation duration)
+    }, 5000);
 }
 
-// Call rotateQuotes and animateProgressBar when the page loads
 window.addEventListener('load', () => {
     rotateQuotes();
     animateProgressBar();

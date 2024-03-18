@@ -5,7 +5,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    overflow: hidden; /* Add this line to prevent the body from scrolling */
+    overflow: hidden;
 }
 .navbar_container {
     background-color: #0D7377;
@@ -19,11 +19,47 @@ body {
     color: white;
     cursor: pointer;
     font-size: 15px;
-    margin-left: 20px; /* Adjust the margin to bring buttons closer together */
+    margin-left: 20px;
     transition: 0.3s;
 }
 .navbar_container button:hover {
     text-decoration: underline;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    min-width: 150px;
+    font-size: 14px;
+    display: none;
+    position: absolute;
+    font-family: "Your Custom Font", sans-serif;
+    font-weight: 500;
+    background-color: #0D7377;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 4px;
+    top: 100%;
+    margin-top: 12%;
+}
+
+.dropdown-content a {
+    color: rgb(212, 212, 212);
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #084c4e;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 .directory-box-code-writing-space_container {
     background-color: #2ecc71;
@@ -57,7 +93,7 @@ body {
     overflow: visible;
     margin-left: -20px;
     margin-top: 25px;
-    position: relative; /* Add this line */
+    position: relative;
 }
 .close {
     width: 18px;
@@ -92,21 +128,17 @@ body {
     text-align: left;
     font: 400 20px "IBM Plex Sans Hebrew", sans-serif;
     position: relative;
-    width: 91px;
-    height: 24px;
-    top: 4px;
+    top: 6px;
     left: -110px;
-    transform-origin: 0 0;
-    transform: rotate(0deg) scale(1, 1);
-  
-} 
+}
+
 .code-writing-area-setting button {
     background: none;
     border: none;
     color: white;
     cursor: pointer;
     font-size: 15px;
-    margin-left: 20px; /* Adjust the margin to bring buttons closer together */
+    margin-left: 20px;
     transition: 0.3s;
 }
 .code-writing-area {
@@ -244,15 +276,15 @@ body {
     flex: 0 0 auto;
     overflow: hidden;
     position: relative;
-    max-height: 600px; /* Set the maximum height */
-    min-height: 2px; /* Set the minimum height */
+    max-height: 600px;
+    min-height: 2px;
     transition: height 0.3s ease, background-color 0.6s ease;
 }
 .resize-handle {
     width: 100%;
-    height: 1px; /* Height of the resizing handle */
+    height: 1px;
     background: #0d7377;
-    cursor: ns-resize; /* Set cursor style to north-south resize */
+    cursor: ns-resize;
     flex: 1; 
 }
 .ggcontainer {

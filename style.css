@@ -28,15 +28,12 @@ body {
   font-family: "IBM Plex Sans Hebrew", Arial, sans-serif;
   font-size: 25px;
   font-weight: 600;
-  /* Add transition for a smooth hover effect */
   transition: background-color 0.3s ease;
 }
-/* Add hover effect */
+
 .Create-Button:hover {
   background-color: #095d63;
-  /* Change the background color on hover */
   cursor: pointer;
-  /* Change cursor on hover */
 }
 .showcase {
   background: #ff0505;
@@ -66,11 +63,11 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 1; /* Set initial opacity to 1 for the first image */
+  opacity: 1;
   position: absolute;
   top: 0;
   left: 0;
-  transition: opacity 2s ease-in-out; /* Apply transition only for subsequent images */
+  transition: opacity 2s ease-in-out;
 }
 .slide-image.active {
   opacity: 1;

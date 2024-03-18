@@ -179,7 +179,7 @@
   flex-direction: column;
 }
 .slection {
-  background: #212121; /* Corrected missing semicolon */
+  background: #212121;
   height: 8%;
   display: flex;
   align-items: flex-end;
@@ -194,7 +194,7 @@
 }
 .selectedtemplates {
   background: #212121;
-  height: 7%; /* Adjust the height as needed */
+  height: 7%;
   margin-top: 2%;
   display: flex;
   flex-direction: row;
@@ -215,18 +215,14 @@
 .choise1 img,
 .choise2 img,
 .choise3 img {
-  max-width: 100%; /* Limit the image width to its container */
-  max-height: 100%; /* Limit the image height to its container */
-  height: auto; /* Maintain the aspect ratio */
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
 }
 .blank {
   height: 100%;
-  flex: 1; /* This will make the blank child take up the remaining space */
+  flex: 1;
 }
-
-
-
-
 
 .visiblitytoggle {
   background: #212121;
@@ -237,7 +233,7 @@
 .visiblitytoggle .Private,
 .visiblitytoggle .Public,
 .visiblitytoggle .Custom {
-  border-radius: 5px; /* Adjust the value as needed */
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   margin-top: 4%;
@@ -273,9 +269,9 @@
 .Pricon,
 .Pubcon,
 .Cuscon {
-  font-family: Arial, sans-serif; /* Change this to your desired font */
+  font-family: Arial, sans-serif;
   color: #ffffff;
-  font-size: 12px; /* Adjust the value as needed */
+  font-size: 12px;
 }
 .visiblitytoggle .Private:hover,
 .visiblitytoggle .Public:hover,
@@ -287,13 +283,6 @@
   background: none !important;
   cursor: default;
 }
-
-
-
-
-
-
-
 
 .extras{
   background:#212121;
@@ -308,9 +297,9 @@
 }
 .aditionalsettings button {
   background: none;
-  font-family: Arial, sans-serif; /* Change this to your desired font */
+  font-family: Arial, sans-serif;
   color: #ffffff;
-  font-size: 14px; /* Adjust the value as needed */
+  font-size: 14px;
   margin-right: 2%;
   border: none;
   cursor: pointer;
@@ -333,18 +322,18 @@
   justify-content: center;
   align-items: center;
   color: #fff;
-  border-radius: 7px; /* Add rounded corners */
+  border-radius: 7px;
   transition: background-color 0.3s, color 0.3s;
 }
 .createbutton{
   margin-right: 1%;
   flex: 2;
-  font: 400 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif; /* Apply font properties */
+  font: 400 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif;
 }
 .import{
   margin-left: 1%;
   flex: auto;
-  font: 400 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif; /* Apply font properties */
+  font: 400 20px IBM Plex Sans Devanagari, -apple-system, Roboto, Helvetica, sans-serif;
 
 }
 .createbutton:hover,
